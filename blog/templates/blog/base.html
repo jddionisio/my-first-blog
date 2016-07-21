@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>Jen's Blog</title>
+        <title>The Work in Progress Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -12,7 +12,8 @@
         {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
-        <h1><a href="/">Jen's Blog</a></h1>
+        <h1><a href="/">Work in Progress</a></h1>
+        <h3>My name is Jen, and I'm a serial learner. To keep myself focused and on task, I'm going to use the blog I built at a <a href="http://www.dganjogirls.org">Django Girls</a> workshop in July 2016 to track my successes and failures in making things for the web.</h3>
     </div>
     <div class="content container">
         <div class="row">
