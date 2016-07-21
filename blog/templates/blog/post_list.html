@@ -7,16 +7,12 @@
             <h1><a href="">Jen's Blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 21.07.2016, 11:33</p>
-            <h2><a href="https://jddionisio.pythonanywhere.com">My first post</a></h2>
-            <p>Hello word - this is my new blog.</p>
-        </div>
-
-        <div>
-            <p>published: 21.07.2016, 11:34</p>
-            <h2><a href="https://jddionisio.pythonanywhere.com">My second post</a></h2>
-            <p>I think it's about time to make a taco butt bot.</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="https://jddionisio.pythonanywhere.com">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+{% endfor %}
     </body>
 </html>
